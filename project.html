@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(5, 5, 102);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgb(9, 9, 76);
+            height: 70px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+        }
+
+        /*main*/
+
+        main {
+            height: 160vh;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 10px 0;
+
+        }
+
+        .content>div>div {
+
+            background-color: #566BBA;
+            height: 455px;
+            width: 405px;
+            border-radius: 10px;
+            margin: 40px;
+            text-align: center;
+        }
+
+        .content>div img {
+            height: 250px;
+            width: 350px;
+            border-radius: 10px;
+            margin: 23px 27px 0;
+        }
+
+        .content>div>div h3 {
+            margin-top: 20px;
+            font-size: 1.9rem;
+        }
+
+        .content>div>div h4 {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .content>div>div p {
+            background-color: #0B2447;
+            border-radius: 10px;
+            margin: 8px 150px;
+        }
+
+        hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        /* footer*/
+        footer {
+            background-color: #0e0e1a;
+            height: 295px;
+            padding: 23px 122px;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            top: 45px;
+            left: 118px;
+        }
+
+        .footer div {
+            margin-right: 89px;
+        }
+
+        .footer .f1 div {
+            margin: 8px;
+            padding: 0px 15px;
+        }
+
+        .footer .f1 p {
+            margin-bottom: 5px;
+        }
+
+        .footer .f1 p a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .f1 h2 {
+            margin: 0px 38px;
+        }
+
+        .footer .f2 ul {
+            margin: 8px;
+            padding: 0px 26px;
+        }
+
+        .footer .f2 ul li:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        .footer .f3 ul {
+            margin: 8px;
+            padding: 0px 26px;
+            list-style: none;
+        }
+
+        .footer .f3 ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer .f3 ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer .f3 ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        .copyright {
+            text-align: center;
+            margin: 80px 0px;
+        }
+
+        .copyright p {
+            margin: 10 px 0;
+        }
+
+        @media (max-width:600px) {
+
+            html,
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            nav {
+                margin-right: -40;
+                flex-wrap: wrap;
+                font-size: 3vw;
+            }
+
+            main {
+                height: 270vh;
+            }
+
+            .content {
+                height: 120vh;
+                margin: 60px 10vw;
+            }
+
+            .content>div>div h3 {
+                font-size: 1.3rem;
+            }
+
+            .content>div>div h4 {
+                font-size: 1rem;
+            }
+
+
+            /*footer*/
+            footer {
+                height: 54vh;
+                font-size: 3vw;
+            }
+
+            .footer {
+                justify-content: center;
+
+            }
+
+            .head-footer h2 {
+                width: 280px;
+                margin-left: -45px;
+            }
+
+            .f1 p {
+                width: 200px;
+            }
+
+            .f1 {
+                margin-bottom: 20px;
+            }
+
+            .f2 {
+                margin-left: -70px;
+                margin-bottom: 20px;
+            }
+
+            .f3 {
+                margin-left: 170px;
+            }
+
+            .f3 ul {
+                width: 300px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">Abishekh's Portfolio</div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="content">
+            <div>
+                <div class="E-C">
+                    <img src="./image/e-commerce .png" alt="">
+                    <h3>E Commerce Website</h3>
+                    <h4>Frontend Only</h4>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+                <div class="calculator">
+                    <img src="./image/Calculator.png" alt="">
+                    <h3>Calculator</h3>
+                    <h4>Frontend Only</h4>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="landing-page">
+                    <img src="./image/landing-page.png" alt="">
+                    <h3>Landing Page</h3>
+                    <h4>Frontend Only</h4>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+                <div class="login">
+                    <img src="./image/login-page.png" alt="">
+                    <h3>Login Page</h3>
+                    <h4>Frontend Only</h4>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="head-footer">
+            <h2>Abishekh's Developer Portfolio</h2>
+        </div>
+        <div class="footer">
+            <div class="f1">
+                <h2 class="info">Contact Us:</h2>
+                <div>
+                    <p><a href="mailto:ABCdev1@gmail.com"> Email: dibyansu.dev1@gmail.com </a></p>
+                    <p> Phone: +91 88995XXXXX</p>
+                </div>
+            </div>
+            <div class="f2">
+                <h2 class="info">Quick Links:</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <div class="f3">
+                <h2 class="info">Connect With Us:</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/abhishek-dubey-ab757125a/" target="_main"><i
+                                class="fa-brands fa-linkedin"></i> linkedin </a></li>
+                    <li><a href="https://github.com/Its-Abhishek-2907" target="_main"><i
+                                class="fa-brands fa-square-github"></i> Github </a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>&copy; 2024 Created By Abishekh.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
